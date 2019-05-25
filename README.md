@@ -12,12 +12,14 @@ The response is returned according to the intervals of the posted date and count
 
 Sample Request Body
 
-{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "startDate": "2016-01-26", 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "endDate": "2018-02-02", 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "minCount": 2700, 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "maxCount": 3000
-}
+```javascript
+ {
+    "startDate": "2016-01-26", 
+    "endDate": "2018-02-02", 
+    "minCount": 2700, 
+    "maxCount": 3000
+ }
+```
 
 #  Use Locally
 - git clone git@github.com:gokalpgursoy/assignment-api.git
