@@ -2,6 +2,7 @@ module.exports = {
     extends: 'airbnb-base',
     env: {
       es6: true,
+      mocha: true,
     },
     rules: {
       'consistent-return': 0,
