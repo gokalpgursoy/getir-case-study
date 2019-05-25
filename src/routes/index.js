@@ -4,9 +4,10 @@ const router = express.Router();
 const logger = require('../util/logger');
 
 router.use('/api', router);
+router.use('/records', require('./records'));
 
 // Error Handling
-router.use((err, req, res) => {
+router.use((err, req, res, next) => { // eslint-disable-line
   logger.error(err.message);
   const errorObject = {};
   errorObject.success = false;
