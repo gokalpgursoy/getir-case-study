@@ -43,7 +43,11 @@ exports.getRecordsByFilter = async (req, res, next) => {
     const responseObj = {
       code: 0,
       msg: 'Success',
-      records,
+      records: records.map(x => ({
+        key: x.key,
+        createdAt: x.createdAt,
+        totalCount: x.totalCount,
+      })),
     };
     res.send(responseObj);
   } catch (error) {
