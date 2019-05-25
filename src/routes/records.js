@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { getRecords } = require('../controllers/records');
+const { getAllRecords, getRecordsByFilter } = require('../controllers/records');
 
-router.route('/').post(getRecords);
+router.route('/all').get(getAllRecords);
+router.route('/').post(getRecordsByFilter);
 module.exports = router;

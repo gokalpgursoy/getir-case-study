@@ -11,7 +11,9 @@ router.use((err, req, res, next) => { // eslint-disable-line
   logger.error(err.message);
   const errorObject = {};
   errorObject.success = false;
-  errorObject.message = err.message;
+  errorObject.code = 1; // 1 means fail
+  errorObject.msg = 'Fail';
+  errorObject.internalMessage = err.message;
   if (err.response && err.response.data) {
     errorObject.exception = err.response.data.message;
   }
