@@ -1,4 +1,4 @@
-# assignment-api
+# Getir Case Study
 Use https://assignmentapi.herokuapp.com as base url for consume it!
 
 These API contains 2 endpoints.
